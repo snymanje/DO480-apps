@@ -9,3 +9,5 @@ spec:
     name: hello-kubernetes
   port:
     targetPort: 8080
+  tls:
+    termination: edge

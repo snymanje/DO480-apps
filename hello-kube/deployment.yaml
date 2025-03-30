@@ -21,3 +21,5 @@ spec:
           env:
             - name: MESSAGE
               value: "Hello from OpenShift!"
+      imagePullSecrets:
+        - name: finance-developer-pull-secret

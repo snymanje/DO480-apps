@@ -13,9 +13,10 @@ spec:
       labels:
         app: hello-kubernetes
     spec:
+      serviceAccountName: hellokube
       containers:
         - name: hello-kubernetes
-          image: central-quay-registry.apps.snohub.homelab.io/finance/app-dev:latest
+          image: central-quay-registry.apps.snohub.homelab.io/finance/app-dev:v1.10
           ports:
             - containerPort: 8080
           env:

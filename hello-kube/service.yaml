@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-kubernetes
+  namespace: hello-kube
+spec:
+  selector:
+    app: hello-kubernetes
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

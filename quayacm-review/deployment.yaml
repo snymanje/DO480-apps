@@ -24,6 +24,13 @@ spec:
         ports:
         - containerPort: 8080
           name: budget-app
+        resources:
+          limits:
+            cpu: 100m
+            memory: 50Mi
+          requests:
+            cpu: 50m
+            memory: 50Mi
       imagePullSecrets:
       - name: finance-prod-deployer-pull-secret
 ---  

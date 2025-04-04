@@ -23,5 +23,5 @@ spec:
       - name: hello-app
         image: central-quay-registry.apps.ocp4.example.com/cloudadmin/hello-app:v11
       imagePullSecrets:
-        - name: cloudadmin-compsecret-pull-secret
+        - name: compsecret
 ---
